@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Sections } from "./appElements";
+import Header from "./Components/Header/header";
+import Services from "./Components/Services/Services";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Quote from "./Components/Quote/Quote";
+import About from "./Components/About/About";
+import Works from "./Components/Works/Works";
 
-function App() {
+const App = () => {
+  const [visibility, setVisible] = useState(false);
+  const setVisibleHandler = () => setVisible(!visibility);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ParallaxProvider>
+        <Sections name = 'home'>
+          <Sidebar isSidebarVisible = {visibility} changeVisibility = {setVisibleHandler}/>
+          <Header isSidebarVisible = {visibility} changeVisibility = {setVisibleHandler}/>
+          <Services/>
+          <Quote/>
+          <About/>
+          <Works/>
+        </Sections>
+      </ParallaxProvider>
+    </>
   );
-}
+};
 
 export default App;
