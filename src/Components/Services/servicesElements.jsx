@@ -340,10 +340,6 @@ export const BottomBar = styled.div`
         flex-direction: column;
         margin-top: 100px;
     }
-
-    &:hover {
-        transform: translateY(20px);
-    }
 `
 
 export const ThreeBox = styled.div`

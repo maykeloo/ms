@@ -226,7 +226,7 @@ export const IconBox = styled.div`
   flex-direction: column;
   color: ${gradientColor1};
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 900;
   transition: 0.2s;
 
   @media screen and (max-width: 1200px)
@@ -246,7 +246,7 @@ export const IconBox = styled.div`
 
 export const JsIcon = styled(SiJavascript)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -256,7 +256,7 @@ export const JsIcon = styled(SiJavascript)`
 
 export const ReactIcon = styled(FaReact)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -265,7 +265,7 @@ export const ReactIcon = styled(FaReact)`
 `
 export const ReduxIcon = styled(SiRedux)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -275,7 +275,7 @@ export const ReduxIcon = styled(SiRedux)`
 
 export const GitIcon = styled(DiGit)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -285,7 +285,7 @@ export const GitIcon = styled(DiGit)`
 
 export const JsonIcon = styled(SiJson)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -295,7 +295,7 @@ export const JsonIcon = styled(SiJson)`
 
 export const SassLogo = styled(DiSass)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -305,7 +305,7 @@ export const SassLogo = styled(DiSass)`
 
 export const HtmlIcon = styled(AiFillHtml5)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -315,7 +315,7 @@ export const HtmlIcon = styled(AiFillHtml5)`
 
 export const SCIcon = styled(SiStyledcomponents)`
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -325,7 +325,7 @@ export const SCIcon = styled(SiStyledcomponents)`
 
 export const NodeIcon = styled(FaNode)`
   color: white;
-  font-size: 6em;
+  font-size: 5  em;
   transition: 0.2s;
 
   &:hover {

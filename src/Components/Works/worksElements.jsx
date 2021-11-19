@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {FiArrowUpRight} from 'react-icons/fi'
 
 const gradientColor1 = "#AE67FA";
 const gradientColor2 = "#F49867";
@@ -95,3 +96,20 @@ export const WorkDescription = styled.p`
     font-size: 18px;
     line-height: 25px;
 `
+
+export const ShowMoreBar = styled.div`
+    width: 30%;
+    height: 20%;
+    display: flex;
+`
+
+export const TextShow = styled.div`
+    color: blue;
+`
+
+
+
+export const LinkArrow = styled(FiArrowUpRight)`
+    color: blue;
+`
+

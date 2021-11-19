@@ -5,7 +5,10 @@ import {
   Box2,
   Date,
   GridBar,
+  LinkArrow,
+  ShowMoreBar,
   TextBox,
+  TextShow,
   Title,
   TitleBar,
   WorkDescription,
@@ -15,6 +18,7 @@ import {
 } from "./worksElements";
 
 import gitfinder from "../../images/gitfinder.png";
+import { Link } from "react-scroll";
 
 const Works = () => {
   return (
@@ -39,6 +43,10 @@ const Works = () => {
                 is a fully functional application that retrieves weather data
                 from a given place entered by the user.
               </WorkDescription>
+              <ShowMoreBar>
+                <TextShow>Show more</TextShow>
+                <LinkArrow/>
+              </ShowMoreBar>
               </TextBox>
             </Box1>
             <Box2></Box2>

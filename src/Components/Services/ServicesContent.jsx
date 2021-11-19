@@ -59,7 +59,7 @@ const ServicesContent = () => {
             </TopBarContentBox>
           </TopBar>
 
-          <Parallax x= {[-10, 10]}>
+          <Parallax x= {[-20, 20]}>
           <BottomBar>
             <ThreeBox data-aos="zoom-in">
               <BoxTitleBar>
