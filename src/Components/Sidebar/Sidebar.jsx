@@ -13,7 +13,7 @@ const Sidebar = ({ isSidebarVisible, changeVisibility }) => {
   const links = ["Home", "About", "Works", "Contact"];
   const link = links.map((link) => (
     <MobileLinkBar key = {link}>
-      <LinkButton offset = {-200} duration = {3000} smooth = {true} to = {link.toLowerCase()} onClick = {changeVisibility}>{link}</LinkButton>
+      <LinkButton duration = {3000} smooth = {true} to = {link.toLowerCase()} onClick = {changeVisibility}>{link}</LinkButton>
     </MobileLinkBar>
   ));
 

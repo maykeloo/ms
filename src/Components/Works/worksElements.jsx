@@ -69,11 +69,15 @@ export const Box2 = styled.div`
     height: 100%;
     width: 100%;
     background-color: blue;
+
 `
 
 export const TextBox = styled.div`
-    width: 90%;
-    height: 90%;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 `
 
 export const Date = styled.p`
@@ -82,11 +86,12 @@ export const Date = styled.p`
 
 export const WorkTitle = styled.p`
     color: white;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: bold;
 `
 
 export const WorkDescription = styled.p`
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 25px;
 `

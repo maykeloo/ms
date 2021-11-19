@@ -19,7 +19,7 @@ import gitfinder from "../../images/gitfinder.png";
 const Works = () => {
   return (
     <>
-      <WorksSection>
+      <WorksSection name = 'works'>
         <WorksContentBox>
           <TitleBar>
             <Title>Works</Title>

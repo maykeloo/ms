@@ -8,6 +8,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Quote from "./Components/Quote/Quote";
 import About from "./Components/About/About";
 import Works from "./Components/Works/Works";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   const [visibility, setVisible] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
           <Quote/>
           <About/>
           <Works/>
+          <Contact/>
         </Sections>
       </ParallaxProvider>
     </>

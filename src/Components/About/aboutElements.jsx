@@ -224,7 +224,7 @@ export const IconBox = styled.div`
   border-radius: 4px;
   justify-content: space-around;
   flex-direction: column;
-  color: white;
+  color: ${gradientColor1};
   font-size: 16px;
   font-weight: bold;
   transition: 0.2s;
@@ -234,8 +234,6 @@ export const IconBox = styled.div`
     width: 100%;
   }
 
-  &:hover{
-    background-color: white;
 
 
     > * {
@@ -439,4 +437,14 @@ export const Button = styled(Link)`
     border: 2px solid black;
     color: black;
   }
+`
+
+export const ArrowBox = styled.div`
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+`
+
+export const Arrow = styled.img`
+  width: 100%;
 `

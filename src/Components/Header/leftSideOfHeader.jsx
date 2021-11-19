@@ -30,7 +30,7 @@ const LeftSideOfHeader = ({ changeVisibility }) => {
   const links = ["Home", "About", "Works", "Contact"];
   const link = links.map((link) => (
     <LinkBox key = {link}>
-      <LinkButton offset = {-200} duration = {3000} smooth = {true} to = {link.toLowerCase()}>{link}</LinkButton>
+      <LinkButton duration = {3000} smooth = {true} to = {link.toLowerCase()}>{link}</LinkButton>
     </LinkBox>
   ));
 
@@ -73,7 +73,7 @@ const LeftSideOfHeader = ({ changeVisibility }) => {
               <WelcomeText data-aos="fade-left" data-aos-delay="300">I am glad you are here.</WelcomeText>
             </WelcomeTextBar>
             <AboutBar>
-              <AboutBox offset = {-200} to = 'about' smooth = {true} duration = {3000}>
+              <AboutBox to = 'about' smooth = {true} duration = {3000}>
                 <AboutText>about</AboutText>
                 <AboutArrowBox>
                   <AboutArrow />

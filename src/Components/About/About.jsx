@@ -38,6 +38,8 @@ import {
   Text2,
   ButtonBar,
   Button,
+  ArrowBox,
+  Arrow,
 } from "./aboutElements";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -45,6 +47,7 @@ import avatar from "../../images/avatar.png";
 import circles from "../../images/circles.svg";
 import { CarouselWrapper } from "react-pretty-carousel";
 import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+import arrow from '../../images/slidemeArrow.png'
 
 const About = () => {
   useEffect(() => {
@@ -173,6 +176,9 @@ const About = () => {
                     </GlitchClip>
                   </CarouselWrapper>
                 </IconsBar>
+                <ArrowBox>
+                  <Arrow src = {arrow}/>
+                </ArrowBox>
               </Box4Contentbox>
             </Box4>
           </BottomBar>

@@ -35,7 +35,7 @@ const RightSideOfHeader = () => {
     <>
       <RightBox>
         <Image src={image} className="object" data-value="0.03"/>
-          <ScrollIconBox data-aos="fade-down" data-aos-delay="300" to = 'about' smooth = {true} duration = '10000'>
+          <ScrollIconBox data-aos="fade-down" data-aos-delay="300" to = 'contact' smooth = {true} duration = '15000'>
             <ScrollText>Scroll down</ScrollText>
             <ScrollIcon />
           </ScrollIconBox>
