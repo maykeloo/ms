@@ -1,56 +1,32 @@
 import React from "react";
 import {
-  Box1,
-  Box1Image,
-  Box2,
-  Date,
-  GridBar,
-  LinkArrow,
-  ShowMoreBar,
-  TextBox,
-  TextShow,
+  FlexBar,
   Title,
   TitleBar,
-  WorkDescription,
   WorksContentBox,
   WorksSection,
-  WorkTitle,
 } from "./worksElements";
-
-import gitfinder from "../../images/gitfinder.png";
-import { Link } from "react-scroll";
+import { Routes, Route } from "react-router-dom";
+import Main from "./Main";
+import Gitfinder from "./Gitfinder";
+import TipCalc from "./TipCalc";
 
 const Works = () => {
   return (
     <>
-      <WorksSection name = 'works'>
+      <WorksSection name="works">
         <WorksContentBox>
           <TitleBar>
             <Title>Works</Title>
           </TitleBar>
 
-          <GridBar>
-            <Box1>
-              <Box1Image src={gitfinder} />
-              <TextBox>
-              <Date>June, 2021</Date>
-              <WorkTitle>Gitfinder</WorkTitle>
-              <WorkDescription>
-                The first application using API that caused me a lot of problems
-                but also satisfaction when it finally started to work SENSIBLY.
-                It is not a masterpiece, but with time, when I get into
-                practice, I will improve it. It uses the OpenwWeatherMap API and
-                is a fully functional application that retrieves weather data
-                from a given place entered by the user.
-              </WorkDescription>
-              <ShowMoreBar>
-                <TextShow>Show more</TextShow>
-                <LinkArrow/>
-              </ShowMoreBar>
-              </TextBox>
-            </Box1>
-            <Box2></Box2>
-          </GridBar>
+          <FlexBar>
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/gitfinder" element={<Gitfinder/>}/>
+              <Route path="/tipcalc" element={<TipCalc/>}/>
+            </Routes>
+          </FlexBar>
         </WorksContentBox>
       </WorksSection>
     </>

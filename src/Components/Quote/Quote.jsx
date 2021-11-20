@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { QuoteBox, QuoteIcon, QuoteSection, QuoteText } from "./quoteElements";
+import { QuoteBox, QuoteSection, QuoteText } from "./quoteElements";
 import Aos from 'aos';
 import "aos/dist/aos.css";
 

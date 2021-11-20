@@ -11,15 +11,10 @@ const gradientColor1 = "#AE67FA";
 const gradientColor2 = "#F49867";
 
 export const AboutSection = styled.section`
-  height: 150vh;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
-
-  @media screen and (max-width: 1200px)
-  {
-    height: 300vh;
-  }
 `;
 
 export const ContentGrid = styled.div`
@@ -32,7 +27,6 @@ export const ContentGrid = styled.div`
 `;
 
 export const TopBar = styled.div`
-  height: 50%;
   width: 100%;
   display: flex;
 
@@ -43,7 +37,6 @@ export const TopBar = styled.div`
 `
 
 export const BottomBar = styled.div`
-  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -151,7 +144,6 @@ export const Box2ContentText = styled.h3`
 
 export const Box3 = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -216,15 +208,14 @@ export const IconsBar = styled.div`
 
 export const IconBox = styled.div`
   background: transparent;
-  border: 2px solid white;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   align-items: center;
   border-radius: 4px;
   justify-content: space-around;
   flex-direction: column;
-  color: ${gradientColor1};
+  color: ${gradientColor2};
   font-size: 16px;
   font-weight: 900;
   transition: 0.2s;
@@ -325,7 +316,7 @@ export const SCIcon = styled(SiStyledcomponents)`
 
 export const NodeIcon = styled(FaNode)`
   color: white;
-  font-size: 5  em;
+  font-size: 5em;
   transition: 0.2s;
 
   &:hover {
@@ -351,8 +342,8 @@ export const ExtraTechnology = styled.p`
 
 export const GetStartBar = styled.div`
   width: 100%;
-  height: 300px;
   margin-top: 200px;
+  height: 300px;
   display: flex;
   justify-content: center;  
   align-items: center;

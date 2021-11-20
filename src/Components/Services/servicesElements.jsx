@@ -1,25 +1,11 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-scroll";
 
-const scale = keyframes`
-    0%{
-        transform: scale(1);
-    }
-
-    50%{
-        transform: scale(1.4);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-`
 
 const gradientColor1 = "#AE67FA";
 const gradientColor2 = "#F49867";
 
 export const ServicesSection = styled.section`
-    height: 130vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -103,7 +89,7 @@ display: none;
 
 export const ServicesContentBox = styled.div`
     width: 80%;
-    height: 90%;
+    height: 800px;
     padding: 0px 50px;
     background-color: #0c335e;
     border-radius: 4px;
@@ -310,9 +296,6 @@ export const LinkBox = styled.div`
     justify-content: flex-end;
     transition: .2s;
 
-    &:hover {
-       color: white;
-    }
 
     @media screen and (max-width: 1200px)
   {
@@ -325,6 +308,13 @@ export const LinkBox = styled.div`
 export const LinkTo = styled(Link)`
     color: ${gradientColor2};
     cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+           color: white;
+           transform: scale(1.1);
+    }
+
 `
 
 export const BottomBar = styled.div`

@@ -9,13 +9,15 @@ import Quote from "./Components/Quote/Quote";
 import About from "./Components/About/About";
 import Works from "./Components/Works/Works";
 import Contact from "./Components/Contact/Contact";
+import { HashRouter as Router } from 'react-router-dom'
 
 const App = () => {
   const [visibility, setVisible] = useState(false);
   const setVisibleHandler = () => setVisible(!visibility);
 
   return (
-    <>
+    <>  
+    <Router hashType = 'noslash'>
       <ParallaxProvider>
         <Sections name = 'home'>
           <Sidebar isSidebarVisible = {visibility} changeVisibility = {setVisibleHandler}/>
@@ -27,6 +29,7 @@ const App = () => {
           <Contact/>
         </Sections>
       </ParallaxProvider>
+      </Router>
     </>
   );
 };

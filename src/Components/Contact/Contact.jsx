@@ -1,11 +1,13 @@
 import React from 'react'
-import { ContactSection } from './contactElements'
+import { ContactContentBox, ContactSection } from './contactElements'
 
 const Contact = () => {
     return (
         <>
             <ContactSection name = 'contact'>
-
+                <ContactContentBox>
+                    
+                </ContactContentBox>
             </ContactSection>
         </>
     )

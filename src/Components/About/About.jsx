@@ -195,7 +195,7 @@ const About = () => {
                 </Text2>
             </TextBar>
             <ButtonBar>
-              <Button>
+              <Button  smooth = {true} to = "contact"> 
                 Get Started
               </Button>
             </ButtonBar>
