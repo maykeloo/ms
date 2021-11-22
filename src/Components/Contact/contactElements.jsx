@@ -49,6 +49,17 @@ export const Input = styled.input`
     outline: none;
     font-size: 24px;
     margin-top: 20px;
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+    }
+
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+    }
     
     &::placeholder {
         color: #264653;
@@ -64,7 +75,7 @@ export const Text = styled.textarea`
     border-radius: 2px;
     color: white;
     outline: none;
-    font-size: 24px;
+    font-size: 16px;
     margin-top: 20px;
 
     &::placeholder {
@@ -92,4 +103,19 @@ export const Submit = styled.input`
         color: white
     }
 
+`
+
+export const ErrorBar = styled.div`
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+`
+
+export const ErrowText = styled.span`
+    color: red;
+`
+
+export const SentText = styled.span`
+    color: green;
 `
