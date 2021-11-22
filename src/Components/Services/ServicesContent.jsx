@@ -33,7 +33,7 @@ const ServicesContent = () => {
 
   return (
     <>
-      <Parallax x={[14, -7]}>
+      <Parallax x={[7, -7]}>
         <ServicesBox name="services">
           <ServicesContentBox data-aos="fade-up" data-aos-delay="200">
             <TopBar>
@@ -64,7 +64,7 @@ const ServicesContent = () => {
               </TopBarContentBox>
             </TopBar>
 
-            <Parallax x={[-20, 20]}>
+            <Parallax x={[-20, 30]}>
               <BottomBar>
                 <ThreeBox data-aos="zoom-in">
                   <BoxTitleBar>

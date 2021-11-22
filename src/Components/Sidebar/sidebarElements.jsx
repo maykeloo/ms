@@ -10,8 +10,8 @@ export const SidebarBox = styled.div`
   z-index: 999;
   transition: 1s;
   top: ${(props) => (props.isSidebarVisible ? "0" : "-150%")};
-  background-color: rgb(29, 36, 59);
-  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+  background-color: #2A9D8F;
+  box-shadow: 0px 0px 24px 0px #134b44;
   display: flex;
   justify-content: center;
   align-items: center;

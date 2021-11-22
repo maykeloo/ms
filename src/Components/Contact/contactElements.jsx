@@ -9,7 +9,87 @@ export const ContactSection = styled.section`
 `
 
 export const ContactContentBox = styled.div`
-    width: 80%;
+    width: 100%;
     height: 80%;
-    background-color: blue;
+`
+
+export const FormContent = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: #E9C46A;
+`
+
+export const LeftSize = styled.div`
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const FormBox = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`
+
+export const FormLabel = styled.div`
+    width: 100%;
+    height: 90%;
+`
+
+export const Input = styled.input`
+    width: 100%;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 2px;
+    color: white;
+    outline: none;
+    font-size: 24px;
+    margin-top: 20px;
+    
+    &::placeholder {
+        color: #264653;
+        font-size: 18px;
+    }
+`
+
+export const Text = styled.textarea`
+    width: 100%;
+    padding: 25px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 2px;
+    color: white;
+    outline: none;
+    font-size: 24px;
+    margin-top: 20px;
+
+    &::placeholder {
+        color: #264653;
+        font-size: 18px;
+    }
+`
+
+export const Submit = styled.input`
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 2px;
+    color: #264653;
+    outline: none;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;  
+    margin-top: 20px;  
+
+    &:hover {
+        background-color: #F4A261;
+        color: white
+    }
+
 `

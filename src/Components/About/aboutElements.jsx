@@ -59,7 +59,7 @@ export const Box1 = styled.div`
 
 export const Circles = styled.img`
     position: absolute;
-    height: 300px;
+    height: 250px;
     left: 0px;
     bottom: -100px;
     
@@ -93,7 +93,7 @@ export const TitleBar = styled.div`
 `;
 
 export const Title = styled.span`
-  color: ${gradientColor2};
+  color: #E9C46A;
   font-size: 20px;
 `;
 
@@ -104,37 +104,13 @@ export const Box2Contentbox = styled.div`
   align-items: center;
   position: relative;
   justify-content: center;
-
-  
-  &:after {
-        position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 500px;
-    height: 500px;
-    right: 0px;
-    top: -130px;
-    filter: blur(100px);
-    border-radius: 50%;
-    opacity: 20%;
-    }
 `;
 export const Box2ContentText = styled.h3`
   font-size: 3.2em;
   padding: 0;
   margin: 0;
   font-weight: 900;
-  background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2A9D8F;
 
   @media screen and (max-width: 1200px)
   {
@@ -353,7 +329,7 @@ export const GetBox = styled.div`
   width: 80%;
   height: 60%;
   border-radius: 7px;
-  background: linear-gradient(${gradientColor1}, ${gradientColor2});
+  background: #E9C46A;
   display: flex;
   align-items: center;
 `

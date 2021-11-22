@@ -91,7 +91,7 @@ export const ServicesContentBox = styled.div`
     width: 80%;
     height: 800px;
     padding: 0px 50px;
-    background-color: #0c335e;
+    background-color: #2A9D8F;
     border-radius: 4px;
     box-shadow: 0px 0px 24px 0px rgba(45, 45, 45, 1);
     display: flex;
@@ -99,39 +99,6 @@ export const ServicesContentBox = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    &:after {
-    position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 400px;
-    height: 400px;
-    left: 200px;
-    top: 200px;
-    filter: blur(30px);
-    border-radius: 50%;
-    opacity: 20%;
-    }
-
-    &:before {
-        position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 400px;
-    height: 400px;
-    bottom: -200px;
-    right: -200px;
-    filter: blur(100px);
-    border-radius: 50%;
-    opacity: 20%;
-    }
 
     @media screen and (max-width: 1200px)
     {
@@ -149,49 +116,13 @@ export const ServicesContentBoxMobile = styled.div`
         width: 80%;
     height: 90%;
     padding: 0px 50px;
-    background-color: #0c335e;
+    background-color: #2A9D8F;
     border-radius: 4px;
     box-shadow: 0px 0px 24px 0px rgba(45, 45, 45, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-
-    &:after {
-        position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 400px;
-    height: 400px;
-    left: 200px;
-    top: 200px;
-    filter: blur(30px);
-    border-radius: 50%;
-    opacity: 20%;
-    }
-
-    &:before {
-        position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 400px;
-    height: 400px;
-    bottom: -200px;
-    right: -200px;
-    filter: blur(100px);
-    border-radius: 50%;
-    opacity: 20%;
-    }
-
-    }
 `
 
 
@@ -237,7 +168,7 @@ export const YearBox = styled.div`
 `
 
 export const SectionYear = styled.p`
-    color: #076ff7a2;
+    color: #F4A261;
     font-size: 40px;
     margin: 0;
     font-weight: bold;
@@ -272,15 +203,9 @@ export const TextBox = styled.div`
 `
 
 export const Text = styled.div`
-font-size: 5vh;
-  font-weight: 900;
-  background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 5vh;
+    font-weight: 900;
+    color: #E9C46A;
 
   @media screen and (max-width: 1200px)
   {
@@ -306,7 +231,7 @@ export const LinkBox = styled.div`
 `
 
 export const LinkTo = styled(Link)`
-    color: ${gradientColor2};
+    color: #E9C46A;
     cursor: pointer;
     transition: 0.2s;
 
@@ -354,14 +279,14 @@ export const BoxTitleBar = styled.div`
         content: '';
         width: 50px;
         height: 5px;
-        background-image: linear-gradient(${gradientColor1}, ${gradientColor2});
+        background-color: #F4A261;
         top: 0;
         left: 0;
     }
 `
 
 export const BoxTitle = styled.h3`
-  color: white;
+  color: #E9C46A;
   font-size: 25px;
 `
 
@@ -371,7 +296,7 @@ export const BoxTextBar = styled.div`
 `
 
 export const BoxText = styled.p`
-    color: #75b1ff;
+    color: white;
     font-size: 1em;
     letter-spacing: 1px;
     line-height: 25px;

@@ -20,31 +20,9 @@ export const QuoteBox = styled.div`
   align-items: center;
   position: relative;
 
-  &:after {
-        position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 500px;
-    height: 500px;
-    left: -200px;
-    top: -130px;
-    filter: blur(30px);
-    border-radius: 50%;
-    opacity: 20%;
-    }
 `;
 
 export const QuoteText = styled.blockquote`
   font-weight: 900;
-  background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #F4A261;
 `;

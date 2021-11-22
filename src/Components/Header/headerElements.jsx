@@ -36,22 +36,6 @@ export const HeadBoxCont = styled.div`
   display: flex;
   position: relative;
 
-  &:after {
-    position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 1000px;
-    height: 1000px;
-    top: 0px;
-    right: 0px;
-    filter: blur(100px);
-    border-radius: 50%;
-    opacity: 20%;
-    z-index: 0;
   }
 `;
 
@@ -74,6 +58,7 @@ export const Image = styled.img`
   object-fit: contain;
 `;
 
+
 export const ScrollIconBox = styled(Link)`
   position: absolute;
   display: flex;
@@ -90,7 +75,7 @@ export const ScrollIconBox = styled(Link)`
 `;
 
 export const ScrollIcon = styled(CgArrowLongDownR)`
-  color: ${gradientColor2};
+  color: #2a9d8f;
   font-size: 40px;
   animation: ${scrollIconAnim};
   animation-duration: 2s;
@@ -98,7 +83,7 @@ export const ScrollIcon = styled(CgArrowLongDownR)`
 `;
 
 export const ScrollText = styled.span`
-  color: ${gradientColor2};
+  color: #2a9d8f;
   transform: rotate(-90deg);
   font-size: 13px;
 `;
@@ -116,24 +101,6 @@ export const LSHBox = styled.section`
 
   @media screen and (max-width: 1100px) {
     width: 100%;
-  }
-
-  &:after {
-    position: absolute;
-    content: "";
-    background-image: radial-gradient(
-      circle,
-      rgba(89, 131, 252, 1) 0%,
-      rgba(41, 53, 86, 1) 100%
-    );
-    width: 500px;
-    height: 500px;
-    top: -250px;
-    left: -250px;
-    filter: blur(100px);
-    border-radius: 50%;
-    opacity: 30%;
-    z-index: -1;
   }
 `;
 
@@ -238,13 +205,7 @@ export const TitleText = styled.h1`
   margin: 0;
   font-size: 6vh;
   font-weight: 900;
-  background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #e9c46a;
 
   @media screen and (max-width: 1200px) {
     font-size: 4vh;
@@ -261,32 +222,10 @@ export const TitleTextMobile = styled.h1`
   display: block;
   font-size: 4vh;
   font-weight: 900;
-  background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #e9c46a;
   }
 `;
 
-export const FrontEndText = styled.h1`
-   font-size: 6vh;
-   font-family: 'La Belle Aurore', sans-serif;
-
-   background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  @media screen and (max-width: 1100px) {
-    font-size: 4vh;
-  }
-`
 
 export const SmallTitleBox = styled.div`
   height: 40%;
@@ -333,11 +272,7 @@ export const AboutText = styled.span`
 export const AboutArrowBox = styled.div`
   height: 25px;
   width: 25px;
-  background: -webkit-linear-gradient(
-    -45deg,
-    ${gradientColor1},
-    ${gradientColor2}
-  );
+  background: #2a9d8f;
   margin-left: 10px;
   display: flex;
   justify-content: center;
