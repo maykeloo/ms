@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-
-const gradientColor1 = "#AE67FA";
-const gradientColor2 = "#F49867";
-
 export const ServicesSection = styled.section`
     width: 100vw;
     display: flex;
@@ -91,9 +87,9 @@ export const ServicesContentBox = styled.div`
     width: 80%;
     height: 800px;
     padding: 0px 50px;
-    background-color: #2A9D8F;
+    background-color: #457b9d;
     border-radius: 4px;
-    box-shadow: 0px 0px 24px 0px rgba(45, 45, 45, 1);
+    box-shadow: 0px 0px 24px 0px #00576d;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -116,13 +112,14 @@ export const ServicesContentBoxMobile = styled.div`
         width: 80%;
     height: 90%;
     padding: 0px 50px;
-    background-color: #2A9D8F;
+    background-color: #457b9d;
     border-radius: 4px;
-    box-shadow: 0px 0px 24px 0px rgba(45, 45, 45, 1);
+    box-shadow: 0px 0px 24px 0px #00576d;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
+    }
 `
 
 
@@ -154,7 +151,7 @@ export const TitleBox = styled.div`
 `
 
 export const SectionTitle = styled.p`
-    color: white;
+    color: #F1FAEE;
     font-size: 20px;
     font-weight: bold;
 `
@@ -168,7 +165,7 @@ export const YearBox = styled.div`
 `
 
 export const SectionYear = styled.p`
-    color: #F4A261;
+    color: #1D3557;
     font-size: 40px;
     margin: 0;
     font-weight: bold;
@@ -205,7 +202,7 @@ export const TextBox = styled.div`
 export const Text = styled.div`
     font-size: 5vh;
     font-weight: 900;
-    color: #E9C46A;
+    color: #a8dadc;
 
   @media screen and (max-width: 1200px)
   {
@@ -231,7 +228,7 @@ export const LinkBox = styled.div`
 `
 
 export const LinkTo = styled(Link)`
-    color: #E9C46A;
+    color: #a8dadc;
     cursor: pointer;
     transition: 0.2s;
 
@@ -279,14 +276,14 @@ export const BoxTitleBar = styled.div`
         content: '';
         width: 50px;
         height: 5px;
-        background-color: #F4A261;
+        background-color: #E63946;
         top: 0;
         left: 0;
     }
 `
 
 export const BoxTitle = styled.h3`
-  color: #E9C46A;
+  color: #1D3557;
   font-size: 25px;
 `
 

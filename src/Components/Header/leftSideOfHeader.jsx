@@ -64,9 +64,6 @@ const LeftSideOfHeader = ({ changeVisibility }) => {
                 }}
               />
             </TitleText>
-            <TitleTextMobile>
-            Everybody kills boredom in a different way. Mine is the front-end
-            </TitleTextMobile>
           </TitleBox>
           <SmallTitleBox data-aos="fade-left" data-aos-delay="300">
             <WelcomeTextBar>

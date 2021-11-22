@@ -7,8 +7,6 @@ import {FaReact, FaNode} from 'react-icons/fa'
 import {DiGit, DiSass} from 'react-icons/di'
 import {AiFillHtml5} from 'react-icons/ai'
 
-const gradientColor1 = "#AE67FA";
-const gradientColor2 = "#F49867";
 
 export const AboutSection = styled.section`
   height: 100%;
@@ -93,7 +91,7 @@ export const TitleBar = styled.div`
 `;
 
 export const Title = styled.span`
-  color: #E9C46A;
+  color: #1D3557;
   font-size: 20px;
 `;
 
@@ -110,7 +108,7 @@ export const Box2ContentText = styled.h3`
   padding: 0;
   margin: 0;
   font-weight: 900;
-  color: #2A9D8F;
+  color: #E63946;
 
   @media screen and (max-width: 1200px)
   {
@@ -139,7 +137,7 @@ export const Box3Contentbox = styled.div`
 `
 
 export const Box3ContentText = styled.p`
-  color: white;
+  color: #f1faee;
   font-size: 45px;
   line-height: 50px;
 
@@ -191,7 +189,7 @@ export const IconBox = styled.div`
   border-radius: 4px;
   justify-content: space-around;
   flex-direction: column;
-  color: ${gradientColor2};
+  color: #F1FAEE;
   font-size: 16px;
   font-weight: 900;
   transition: 0.2s;
@@ -208,96 +206,59 @@ export const IconBox = styled.div`
       color: black;
       transform: scale(1.2);
     }
-  }
 `
 
 export const JsIcon = styled(SiJavascript)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: yellow;
-  }
 `
 
 export const ReactIcon = styled(FaReact)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: lightblue;
-  }
 `
 export const ReduxIcon = styled(SiRedux)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: purple;
-  }
 `
 
 export const GitIcon = styled(DiGit)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: orange;
-  }
 `
 
 export const JsonIcon = styled(SiJson)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: gray;
-  }
 `
 
 export const SassLogo = styled(DiSass)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: #ff798f;
-  }
 `
 
 export const HtmlIcon = styled(AiFillHtml5)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: #ff6600;
-  }
 `
 
 export const SCIcon = styled(SiStyledcomponents)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: pink;
-  }
 `
 
 export const NodeIcon = styled(FaNode)`
   color: white;
   font-size: 5em;
   transition: 0.2s;
-
-  &:hover {
-    color: green;
-  }
 `
 
 export const ExtraTechBar = styled.div`
@@ -312,7 +273,7 @@ export const ExtraText = styled.span`
 
 export const ExtraTechnology = styled.p`
   font-size: 14px;
-  color: #185392;
+  color: #457B9D;
   font-weight: 900;
 `
 
@@ -329,7 +290,7 @@ export const GetBox = styled.div`
   width: 80%;
   height: 60%;
   border-radius: 7px;
-  background: #E9C46A;
+  background: #e63946;
   display: flex;
   align-items: center;
 `

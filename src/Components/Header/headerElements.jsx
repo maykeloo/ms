@@ -3,8 +3,6 @@ import { Link } from "react-scroll";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { CgMenuRightAlt, CgArrowLongDownR } from "react-icons/cg";
 
-const gradientColor1 = "#AE67FA";
-const gradientColor2 = "#F49867";
 
 const scrollIconAnim = keyframes`
   0% {
@@ -56,6 +54,11 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
+
+  @media screen and (max-width: 1200px)
+  {
+    width: 80vw;
+  }
 `;
 
 
@@ -75,7 +78,7 @@ export const ScrollIconBox = styled(Link)`
 `;
 
 export const ScrollIcon = styled(CgArrowLongDownR)`
-  color: #2a9d8f;
+  color: #457b9d;
   font-size: 40px;
   animation: ${scrollIconAnim};
   animation-duration: 2s;
@@ -83,7 +86,7 @@ export const ScrollIcon = styled(CgArrowLongDownR)`
 `;
 
 export const ScrollText = styled.span`
-  color: #2a9d8f;
+  color: #457b9d;
   transform: rotate(-90deg);
   font-size: 13px;
 `;
@@ -129,7 +132,7 @@ export const LogoBox = styled.div`
 `;
 
 export const Logo = styled(Link)`
-  color: white;
+  color: #f1faee;
   font-size: 5vh;
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -165,7 +168,7 @@ export const HamburgerMenu = styled.div`
 `;
 
 export const MenuIcon = styled(CgMenuRightAlt)`
-  color: white;
+  color: #f1faee;
   font-size: 26px;
 `;
 
@@ -178,7 +181,7 @@ export const LinkBox = styled.div`
 `;
 
 export const LinkButton = styled(Link)`
-  color: white;
+  color: #f1faee;
   cursor: pointer;
   font-size: 2vh;
   transition: 0.2s;
@@ -205,26 +208,13 @@ export const TitleText = styled.h1`
   margin: 0;
   font-size: 6vh;
   font-weight: 900;
-  color: #e9c46a;
+  color: #457b9d;
 
   @media screen and (max-width: 1200px) {
     font-size: 4vh;
-    display: none;
   }
 `;
 
-export const TitleTextMobile = styled.h1`
-
-  display: none;
-
-  @media screen and (max-width: 1100px) {
-  margin: 0;
-  display: block;
-  font-size: 4vh;
-  font-weight: 900;
-  color: #e9c46a;
-  }
-`;
 
 
 export const SmallTitleBox = styled.div`
@@ -241,9 +231,9 @@ export const WelcomeTextBar = styled.div`
 `;
 
 export const WelcomeText = styled.h3`
-  color: white;
+  color: #1d3557;
   font-size: 2vh;
-  font-weight: lighter;
+  font-weight: 400;
 `;
 
 export const AboutBar = styled.div`
@@ -265,14 +255,14 @@ export const AboutBox = styled(Link)`
 
 export const AboutText = styled.span`
   font-size: 1.2em;
-  color: white;
+  color: #F1FAEE;
   font-weight: 300;
 `;
 
 export const AboutArrowBox = styled.div`
   height: 25px;
   width: 25px;
-  background: #2a9d8f;
+  background: #e63946;
   margin-left: 10px;
   display: flex;
   justify-content: center;

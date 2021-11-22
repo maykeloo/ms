@@ -24,5 +24,5 @@ export const QuoteBox = styled.div`
 
 export const QuoteText = styled.blockquote`
   font-weight: 900;
-  color: #F4A261;
+  color: #F1FAEE;
 `;

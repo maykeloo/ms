@@ -16,7 +16,7 @@ export const ContactContentBox = styled.div`
 export const FormContent = styled.div`
     width: 100%;
     height: 100%;
-    background-color: #E9C46A;
+    background-color: #F1FAEE;
 `
 
 export const LeftSize = styled.div`
@@ -43,9 +43,9 @@ export const Input = styled.input`
     width: 100%;
     padding: 10px 25px;
     background-color: transparent;
-    border: 3px solid white;
+    border: 3px solid #A8DADC;
     border-radius: 2px;
-    color: white;
+    color: #457B9D;
     outline: none;
     font-size: 24px;
     margin-top: 20px;
@@ -71,9 +71,9 @@ export const Text = styled.textarea`
     width: 100%;
     padding: 25px;
     background-color: transparent;
-    border: 3px solid white;
+    border: 3px solid #A8DADC;
     border-radius: 2px;
-    color: white;
+    color: #457B9D;
     outline: none;
     font-size: 16px;
     margin-top: 20px;
@@ -87,8 +87,8 @@ export const Text = styled.textarea`
 export const Submit = styled.input`
     width: 100%;
     padding: 25px;
-    background-color: white;
-    border: 3px solid white;
+    background-color: #A8DADC;
+    border: 3px solid #A8DADC;
     border-radius: 2px;
     color: #264653;
     outline: none;
@@ -99,8 +99,9 @@ export const Submit = styled.input`
     margin-top: 20px;  
 
     &:hover {
-        background-color: #F4A261;
-        color: white
+        background-color: #F1FAEE;
+        color: #457B9D;
+        border: 3px solid #457B9D;
     }
 
 `

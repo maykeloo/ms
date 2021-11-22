@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const gradientColor1 = "#AE67FA";
-const gradientColor2 = "#F49867";
 
 export const WorksSection = styled.section`
   width: 100%;
@@ -29,7 +27,7 @@ export const Title = styled.h3`
   font-weight: 900;
   margin: 0;
   padding: 0;
-  color: #2A9D8F;
+  color: #457B9D;
 `;
 
 export const FlexBar = styled.div`
@@ -45,7 +43,7 @@ export const FlexBar = styled.div`
 
 export const Box1 = styled.div`
   width: 100%;
-  background-color: #0c335e;
+  background-color: #1D3557;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -164,7 +162,7 @@ export const Box2Content = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #2A9D8F;
+  background-color: #457B9D;
   border-radius: 5px;
 
   @media screen and (max-width: 1200px) {
@@ -194,7 +192,7 @@ export const Box3Content = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #F4A261;
+  background-color: #68a9ac;
   border-radius: 5px;
 
   @media screen and (max-width: 1200px) {
@@ -236,7 +234,7 @@ export const Box4Content = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #E9C46A;
+  background-color: #E63946;
   border-radius: 5px;
 
   @media screen and (max-width: 1200px) {
@@ -267,7 +265,7 @@ export const Box5Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #F1FAEE;
   border-radius: 5px;
 
   @media screen and (max-width: 1200px) {
@@ -324,7 +322,7 @@ export const WorkDescriptionBox = styled.div`
 `
 
 export const WorkTitleRouter = styled.h3`
-  color: #E9C46A;
+  color: #e63946;
   font-size: 4em;
 
   @media screen and (max-width: 1200px)
