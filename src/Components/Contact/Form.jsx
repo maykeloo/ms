@@ -1,8 +1,12 @@
 /* eslint-disable no-duplicate-case */
 /* eslint-disable default-case */
 import React, { useRef, useState } from "react";
+import fbLogo from "../../images/fb_logo.svg";
+import liLogo from "../../images/li_logo.svg";
+import bhLogo from "../../images/bh_logo.svg";
 import emailjs from "emailjs-com";
 import {
+  Data,
   ErrorBar,
   ErrowText,
   FormBox,
@@ -10,9 +14,17 @@ import {
   FormLabel,
   Input,
   LeftSize,
+  RightSide,
+  RightSideContentBox,
   SentText,
+  SmallContactBox,
+  SmallTitle,
+  SocialBar,
   Submit,
   Text,
+  Title,
+  TitleBar,
+  WantMore,
 } from "./contactElements";
 
 
@@ -119,7 +131,12 @@ const Form = () => {
     <>
       <FormContent>
         <LeftSize>
-          <form ref={form} onSubmit={sendMail} noValidate>
+          <form 
+            ref={form} 
+            onSubmit={sendMail} 
+            noValidate 
+            style = {{width: "80%", height: "100%"}}
+            >
             <FormBox> 
               <FormLabel>
                 <Input
@@ -161,6 +178,22 @@ const Form = () => {
             </FormBox>
           </form>
         </LeftSize>
+
+        <RightSide>
+          <RightSideContentBox>
+            <TitleBar>
+              <Title>Contact</Title>
+            </TitleBar>
+            <SmallContactBox>
+              <SmallTitle>Stay in touch</SmallTitle>
+              <Data>michalsukiennik.ms@gmail.com</Data>
+              <Data>(+48) 514 010 099</Data>
+            </SmallContactBox>
+            <SocialBar>
+              <WantMore>Want more?</WantMore>
+            </SocialBar>
+          </RightSideContentBox>
+        </RightSide>
       </FormContent>
     </>
   );
